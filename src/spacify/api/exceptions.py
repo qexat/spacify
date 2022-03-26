@@ -15,5 +15,5 @@ MissingRequiredArgs = ErrorType(
 
 
 def error(__type: ErrorType, /, *args) -> None:
-    print("\x1b[1;30;41m", __type.name, "\x1b[22;39;49m", __type.reason(*args))
+    print("\x1b[1;37;41m", __type.name, "\x1b[22;39;49m", __type.reason(*args))
     exit(1)
